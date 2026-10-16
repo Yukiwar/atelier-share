@@ -1,0 +1,30 @@
+/* Legal pages (security S6, idea B): privacidad, términos, borrar-cuenta. No outside fonts or
+   scripts, so the pages load nothing from anyone else. */
+:root { --paper:#fff; --surface:#F7F6F4; --line:#DAD8D3; --stone:#7A7671; --graphite:#4A4744; --ink:#0E0D0D; --wine:#6E1A27; }
+@media (prefers-color-scheme: dark) {
+  :root { --paper:#0E0D0D; --surface:#1A1918; --line:#34322F; --stone:#9A958F; --graphite:#C9C5BF; --ink:#F4F2EE; --wine:#D98A96; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 20px 72px; }
+.mast { font-family: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif; font-size: 44px; letter-spacing: 2px; margin: 0; }
+.eyebrow { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--stone); margin: 0 0 6px; }
+h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 32px; line-height: 1.15; margin: 28px 0 8px; }
+h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 22px; margin: 40px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+h3 { font-size: 16px; font-weight: 600; margin: 22px 0 4px; }
+p, li { color: var(--graphite); }
+strong { color: var(--ink); font-weight: 600; }
+a { color: var(--wine); }
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
+.lead { font-size: 18px; }
+.box { background: var(--surface); border-left: 3px solid var(--wine); padding: 14px 18px; margin: 20px 0; }
+.box p { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-top: 1px solid var(--line); }
+th { color: var(--ink); font-weight: 600; }
+td { color: var(--graphite); }
+.table { overflow-x: auto; }
+ol.steps { padding-left: 22px; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }
+.small { font-size: 13px; color: var(--stone); }
